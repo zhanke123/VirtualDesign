@@ -1,5 +1,4 @@
 # VirtualDesign
-selfDeisgn
 ## 自己设计的虚拟主播数据可视化App
 
 ***
