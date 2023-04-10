@@ -1,7 +1,6 @@
 # VirtualDesign
 ## 自己设计的虚拟主播数据可视化App
 
-***
 
 >采用AndroidStudio进行封壳，使用Vue3.0+Typescript做的H5+app
 
