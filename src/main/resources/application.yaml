@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/acgdatabase?userUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 9517538426a
+    druid:
+      aop-patterns: design.*
+      filter: stat,wall.slf4j
+      stat-view-servlet:
+        login-username: 312644635
+        login-password: 9517538426a
+        enabled: true
+        reset-enable: false
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: '*.js,*.gif,*.jpj,*.css,*.png'
+      max-active: 5
+      min-idle: 1
+      initial-size: 1
+
+  redis:
+    database: 0
+    password:
+    host: 127.0.0.1
+    port: 6379
+    jedis:
+      pool:
+        enabled: true
+        max-active: 8
+        max-wait: -1
+        max-idle: 0
+        min-idle: 0
+    timeout: 10000
+chatgpt:
+  token: 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
+  retries: 5
+  model:  text-davinci-003
+  proxy-host: 127.0.0.1
+  proxy-port: 7890
