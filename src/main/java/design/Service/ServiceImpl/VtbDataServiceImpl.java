@@ -119,7 +119,6 @@ public class VtbDataServiceImpl implements VtbDataService {
         }
         return fansInc;
     }
-
     @Override
     public String getWeekFans() {
         String weekFans = null;
